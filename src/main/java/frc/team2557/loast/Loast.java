@@ -43,7 +43,7 @@ public class Loast extends ToastModule {
             lidarSerialPort.registerListener(lidarListener);
         } catch (SerialPortException e) {
             e.printStackTrace();
-            logger.severe("Loast could not open the serial port! Ensure that the COM_PORT is correctly set in the Lost config file.");
+            logger.severe("Loast could not open the serial port! Ensure that the COM_PORT is correctly set in the Loast config file.");
         }
 
         Heartbeat.add(skipped -> {
